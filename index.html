@@ -1,0 +1,99 @@
+<script>
+	console.log("hello world") // this is an in-line comment
+
+	/*
+	 this is multi-lien comment
+	 */
+
+	/* Data Types */
+
+	// number 
+	var num = 3;
+	var a; //unintialized
+
+	// string
+	var name = "Will";
+	num = 10;
+
+	let ourName = "Waddle";
+	const pi = 3.14;
+	console.log(num+23);
+	console.log(8*num);
+	console.log(num/3); // 3.3333
+
+	num ++;
+	console.log("Now num is: "+num);
+	var myDecimal = 0.009;
+	console.log(myDecimal*num);
+
+	var remainder;
+	remainder = 11%4;
+	console.log(remainder);
+
+	//  string literals escape:
+	var escape ="This sentence has an \"escape\" symbol.";
+	console.log(escape);
+
+	// find the length of a string:
+	console.log("The length of Waddle is: "+ourName.length);
+
+	// scripting: 
+	var firstLetterOfWaddle = ourName[0];
+	console.log(firstLetterOfWaddle);
+
+
+	// string is immutable
+	/*
+	var myStr = "Jello World";
+	myStr[0]= "H";
+	This does not work. You have to change the whole variable like this
+	myStr = "Hello World"
+	*/
+
+
+	// Array
+	var firstArray = ["Kriby",2];
+	firstArray[0] = "kirby"
+	var coolArray = [["Kirby",2],["Waddle",3]];
+	console.log(coolArray[1][0]);
+	// arrays are mutable
+	firstArray[2] = "Waddle";
+	console.log(firstArray);
+	// push items into array
+	coolArray.push(["Loco Roco",4]);
+	coolArray.push(["Danger",5]);
+	console.log(coolArray);
+	// pop to remove an item
+	coolArray.pop();
+	// shift() remove the first element
+	// unshift() adds at the beginning
+	coolArray.unshift(["Squid",1]);
+	//console.log(coolArray);
+
+
+
+	// Creating functions
+	function ourReusableFunc(){
+		console.log("My func says kirdle");
+	}
+	ourReusableFunc();
+	ourReusableFunc();
+
+	function funcWithArgs(a,b){
+		console.log(a+b)
+	}
+	funcWithArgs("Kirby","Waddle")
+	funcWithArgs(2,5)
+	funcWithArgs('2','5')
+	funcWithArgs('2',5)
+
+	
+	// null
+
+	// boolean
+
+	// symbol : immutable primitive value that is unique
+
+	// object
+
+</script>
